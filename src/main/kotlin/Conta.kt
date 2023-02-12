@@ -1,8 +1,8 @@
-class Conta{
+abstract class Conta{
     var titular= ""
     var numero  =   0
     var saldo = 0.0
-        private set//deixa somente ser modificado o valor internamente
+        protected set//deixa somente ser modificado o valor internamente
         //private set(valor){field=valor}//field eh o proprio campo assim eh possivel fazer uma validacao no set se desejar
 
     constructor(titular:String,numero:Int){
@@ -16,11 +16,12 @@ class Conta{
 
     }
 
-    fun saque(valor:Double){
-        if(this.saldo>=valor){
-            this.saldo-=valor
-        }
-    }
+    abstract fun saque(valor:Double)
+//    {
+//        if(this.saldo>=valor){
+//            this.saldo-=valor
+//        }
+//    }
 
     fun transferencia(valor:Double,destino: Conta):Boolean{
         if(this.saldo>=valor){
@@ -33,7 +34,10 @@ class Conta{
 
     //fun getSaldo():Double{ return this.saldo }
 
-    fun setSaldo(valor:Double){
-        this.saldo=valor
-    }
+    //a config de acesso a propriedade foi setada apos o constructor
+//    fun setSaldo(valor:Double){
+//        this.saldo=valor
+//    }
+
+    open fun saque() {}
 }

@@ -10,7 +10,8 @@ class Gerente(
 ){
     //comando override permite editar um metodo qu veio da classe mae
     override fun bonificacao(): Double {
-        return salario*0.2
+        //comando super faz a chamada da funcao na classe pai, conceito de heranca
+        return  salario * 1.1
     }
     fun autentica(senha:Int): Boolean {
         if(this.senha==senha){
