@@ -11,11 +11,11 @@ fun main() {
     println("Bem vindo ao byteBank")
     //testaComportamentoConta()
     //testaFuncionarios()
-    testaContasDiferentes()
+    //testaContasDiferentes()
 
-
-
+    //testaAutenticacao()
 }
+
 
 
 
