@@ -1,3 +1,7 @@
+package modelo
+
+import modelo.Funcionario
+
 //open lbera fazer heranca da classe
 
 //abstract tem open por padrao, serve para informar quea classe n'ao pode receber nada mas [e base para outras classes
@@ -7,7 +11,7 @@ abstract open class FuncionarioAdmin(
      salario:Double,
     val senha:Int
     //val tipo:Int //0funcionario comum, 1 gerente, 2 diretor
-):Funcionario(
+): Funcionario(
     nome=nome,
     cpf=cpf,
     salario=salario
@@ -16,7 +20,8 @@ abstract open class FuncionarioAdmin(
     //abstrair uma funcao obriga que ela seja implementada em seus filhos, e evitando que tenha um padrao que possa ser chamado erroneamente
 
 
-    fun autentica(senha:Int): Boolean {
+
+    open fun autentica(senha:Int): Boolean {
         if (this.senha == senha) {
             return true
         }

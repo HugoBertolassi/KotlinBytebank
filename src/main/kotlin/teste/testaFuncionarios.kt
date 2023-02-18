@@ -1,5 +1,12 @@
+package teste
+
+import modelo.CalculadoraBonificacao
+import modelo.Analista
+import modelo.Diretor
+import modelo.Gerente
+
 fun testaFuncionarios(){
-    val alex =Analista(
+    val alex = Analista(
         nome= "Alex",
         cpf="111.111.111-11",
         salario=1000.0
@@ -23,7 +30,7 @@ fun testaFuncionarios(){
     println("salario ${gui.salario}")
     println("bonificacao ${gui.bonificacao()}")
 
-    var calculadora=CalculadoraBonificacao()
+    var calculadora= CalculadoraBonificacao()
     calculadora.registra(alex)
     calculadora.registra(fran)
     calculadora.registra(gui)

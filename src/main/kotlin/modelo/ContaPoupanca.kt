@@ -1,5 +1,8 @@
+package modelo
+
 class ContaPoupanca(
-    titular: String, numero: Int
+    titular: Cliente,
+    numero: Int
 ) : Conta(
     titular = titular,
     numero = numero

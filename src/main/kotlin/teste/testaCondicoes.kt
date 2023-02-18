@@ -1,3 +1,5 @@
+package teste
+
 //estrura if, when
 fun testaCondicoes(saldo: Double) {
 

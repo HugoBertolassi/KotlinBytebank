@@ -7,13 +7,19 @@
 //alt+ 1 seleciona tela do projeto
 // alt+insert adiciona arquivo
 //ctrl +n abre um menu de navegacao
+//ctrl+alt+o otimizador de pacotes e limpeza de testes
+
+import teste.testaComportamentoConta
+
 fun main() {
     println("Bem vindo ao byteBank")
-    //testaComportamentoConta()
-    //testaFuncionarios()
-    //testaContasDiferentes()
+    //val palavra: String = "texto"
+    //val palavraJava: java.lang.String = java.lang.String("texto")
+    testaComportamentoConta()
+    teste.testaFuncionarios()
+    teste.testaContasDiferentes()
 
-    //testaAutenticacao()
+    teste.testaAutenticacao()
 }
 
 

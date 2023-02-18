@@ -1,3 +1,5 @@
+package teste
+
 fun testaLacos(){
     val ola = "ola" //Same as const
     //laco for

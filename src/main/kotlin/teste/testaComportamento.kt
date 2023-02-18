@@ -1,12 +1,19 @@
+package teste
+
+import modelo.Cliente
+import modelo.ContaCorrente
+import modelo.ContaPoupanca
+
 fun testaComportamentoConta() {
-    val contaAlex = ContaCorrente("alex", 101)
+    val alex=Cliente("alex","12",1)
+    val contaAlex = ContaCorrente(alex, 101)
     //contaAlex.titular="alex"
 
-    val contaFran = ContaPoupanca("fran", 102)
+    val contaFran = ContaPoupanca(Cliente("fran","123",2), 102)
     //contaFran.titular="fran"
     contaFran.deposito(25.0)
-    println("a " + contaAlex.titular)
-    println("a " + contaFran.titular)
+    println("a " + contaAlex.titular.nome)
+    println("a " + contaFran.titular.nome)
 
     println("depositando na fran")
     contaFran.deposito(50.0)

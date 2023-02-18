@@ -1,3 +1,4 @@
+package modelo
 //open lbera fazer heranca da classe
 
 //abstract tem open por padrao, serve para informar quea classe n'ao pode receber nada mas [e base para outras classes
