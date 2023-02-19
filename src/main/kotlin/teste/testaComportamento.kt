@@ -5,11 +5,11 @@ import modelo.ContaCorrente
 import modelo.ContaPoupanca
 
 fun testaComportamentoConta() {
-    val alex=Cliente("alex","12",1)
+    val alex=Cliente(nome="alex", cpf = "12", senha = 1)
     val contaAlex = ContaCorrente(alex, 101)
     //contaAlex.titular="alex"
 
-    val contaFran = ContaPoupanca(Cliente("fran","123",2), 102)
+    val contaFran = ContaPoupanca(Cliente(nome="fran", cpf = "123", senha = 2), 102)
     //contaFran.titular="fran"
     contaFran.deposito(25.0)
     println("a " + contaAlex.titular.nome)
