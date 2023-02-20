@@ -1,6 +1,6 @@
 
-import modelo.Autenticavel
-import modelo.SistemaInterno
+import modelo.Endereco
+import teste.*
 
 //Comandos
 // ctrl+alt+l identa o codigo
@@ -25,30 +25,20 @@ fun main() {
     //val palavraJava: java.lang.String = java.lang.String("texto")
     //testaComportamentoConta()
     //teste.testaFuncionarios()
-    teste.testaContasDiferentes()
-
-    //criacao de object expression, objeto anonimo https://kotlinlang.org/docs/object-declarations.html
-    val fran = object:Autenticavel {
-        val nome:String="fran"
-        val cpf:String="123"
-        override val senha:Int=12
-
-        override fun autentica(senha:Int)=this.senha==senha
-    }
-
-    val sistemaInterno=SistemaInterno()
-    sistemaInterno.entra(fran,12)
-    println("Cliente ${fran.nome}")
-
-
-
-
-
+//    teste.testaContasDiferentes()
+//    testaObjetos()
     //teste.testaAutenticacao()
-
-
+    testaAutenticacaoTipoFuncionario()
+    val endereco =Endereco()
+    //teste de impressoes de any
+    imprime(Unit)//unit eh um objeto que nao tem retorno
+    imprime(1)
+    imprime(1.0)
+    imprime(endereco)
 }
-
+fun imprime(valor:Any):Unit{
+    println(valor)
+}
 
 
 
