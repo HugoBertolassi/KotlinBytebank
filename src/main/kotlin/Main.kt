@@ -1,6 +1,4 @@
-
 import modelo.Endereco
-import teste.*
 
 //Comandos
 // ctrl+alt+l identa o codigo
@@ -28,13 +26,32 @@ fun main() {
 //    teste.testaContasDiferentes()
 //    testaObjetos()
     //teste.testaAutenticacao()
-    testaAutenticacaoTipoFuncionario()
-    val endereco =Endereco()
+ //   testaAutenticacaoTipoFuncionario()
+
+//val endereco =Endereco()
     //teste de impressoes de any
-    imprime(Unit)//unit eh um objeto que nao tem retorno
-    imprime(1)
-    imprime(1.0)
-    imprime(endereco)
+//    imprime(Unit)//unit eh um objeto que nao tem retorno
+//    imprime(1)
+//    imprime(1.0)
+//    imprime(endereco)
+    val endereco = Endereco(
+        logradouro = "Rua vergueiro",
+        complemento = "Alura",
+        cep = "00000-0700"
+    )
+    val enderecoNovo = Endereco(
+        logradouro = "Rua vergueiro",
+        complemento = "Alura",
+        cep = "00000-0700"
+    )
+    println(endereco.equals(enderecoNovo))
+    println(endereco.hashCode())
+    println(enderecoNovo.hashCode())
+    println(endereco)
+    println(enderecoNovo)
+    println("${endereco.javaClass}@${
+        Integer.toHexString(endereco.hashCode())}")
+
 }
 fun imprime(valor:Any):Unit{
     println(valor)

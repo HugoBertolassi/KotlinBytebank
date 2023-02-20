@@ -5,13 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ca1063d-3805-4a26-aea1-5d2b7660d57b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/teste/testaAutenticacaoTipoFuncionario.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/teste/testaObjetos.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/modelo/Analista.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/modelo/Analista.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/modelo/CalculadoraBonificacao.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/modelo/CalculadoraBonificacao.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/modelo/SistemaInterno.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/modelo/SistemaInterno.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/modelo/Endereco.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/modelo/Endereco.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/teste/testaAutenticacaoTipoFuncionario.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/teste/testaAutenticacaoTipoFuncionario.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

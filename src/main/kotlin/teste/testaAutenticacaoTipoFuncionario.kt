@@ -34,6 +34,6 @@ fun testaAutenticacaoTipoFuncionario() {
     sistema.entra(cliente, 123)
     sistema.entra(analista, 123)
 
-    
+
 //    diretor.autentica(123)
 }
