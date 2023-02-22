@@ -1,5 +1,7 @@
 package modelo
 
+import exception.SaldoInsuficienteException
+
 
 //var totalconta:Int =0
 //    private set
@@ -54,6 +56,7 @@ abstract class Conta(
             destino.deposito(valor)
             return true
         }
+        throw SaldoInsuficienteException()
         return false
     }
 

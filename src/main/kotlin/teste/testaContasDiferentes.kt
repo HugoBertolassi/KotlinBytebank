@@ -1,5 +1,6 @@
 package teste
 
+import exception.SaldoInsuficienteException
 import modelo.*
 
 fun testaContasDiferentes() {
@@ -41,8 +42,13 @@ fun testaContasDiferentes() {
     println("Saldo da conta do ${contaCorrente.titular.nome} eh ${contaCorrente.saldo}")
     println("Saldo da conta do ${contaPoupanca.titular.nome} eh ${contaPoupanca.saldo}")
 
-    contaCorrente.transferencia(valor = 100.0, destino = contaPoupanca)
-
+    try {
+        contaCorrente.transferencia(valor = 1000.0, destino = contaPoupanca)
+    }
+    catch (e:SaldoInsuficienteException){
+        println("Saldo Insuficiente para fazer a transferencia")
+        //e.printStackTrace()
+    }
 
     println("Saldo da conta apos transferir do ${contaCorrente.titular.nome} eh ${contaCorrente.saldo}")
     println("Saldo da conta apos  receber transferencia do ${contaPoupanca.titular.nome} eh ${contaPoupanca.saldo}")

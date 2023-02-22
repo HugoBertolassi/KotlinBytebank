@@ -1,5 +1,3 @@
-import modelo.Endereco
-
 //Comandos
 // ctrl+alt+l identa o codigo
 // https://github.com/alura-cursos/kotlin-introducao-orientacao-a-objetos
@@ -10,6 +8,7 @@ import modelo.Endereco
 // alt+insert adiciona arquivo
 //ctrl +n abre um menu de navegacao
 //ctrl+alt+o otimizador de pacotes e limpeza de testes
+//ctrl+p dentro de uma funcao mostra os valores que ela contem
 
 //object declaration
 //diferenca com expression: tem nome
@@ -23,38 +22,15 @@ fun main() {
     //val palavraJava: java.lang.String = java.lang.String("texto")
     //testaComportamentoConta()
     //teste.testaFuncionarios()
-//    teste.testaContasDiferentes()
+    teste.testaContasDiferentes()
 //    testaObjetos()
     //teste.testaAutenticacao()
  //   testaAutenticacaoTipoFuncionario()
 
-//val endereco =Endereco()
-    //teste de impressoes de any
-//    imprime(Unit)//unit eh um objeto que nao tem retorno
-//    imprime(1)
-//    imprime(1.0)
-//    imprime(endereco)
-    val endereco = Endereco(
-        logradouro = "Rua vergueiro",
-        complemento = "Alura",
-        cep = "00000-0700"
-    )
-    val enderecoNovo = Endereco(
-        logradouro = "Rua vergueiro",
-        complemento = "Alura",
-        cep = "00000-0700"
-    )
-    println(endereco.equals(enderecoNovo))
-    println(endereco.hashCode())
-    println(enderecoNovo.hashCode())
-    println(endereco)
-    println(enderecoNovo)
-    println("${endereco.javaClass}@${
-        Integer.toHexString(endereco.hashCode())}")
+   // testaAny()
+    //teste.testaPilhaEException()
 
-}
-fun imprime(valor:Any):Unit{
-    println(valor)
+
 }
 
 
