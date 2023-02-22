@@ -2,7 +2,7 @@ package modelo
 
 class ContaCorrente(
     titular: Cliente,
-    numero: Int
+    numero: Int,
 ) : Conta(
     titular = titular,
     numero = numero

@@ -24,7 +24,7 @@ fun testaComportamentoConta() {
     println("O saldo da fran e ${contaFran.saldo}")
 
     println("transferencia na fran")
-    if (contaFran.transferencia(50.0, contaAlex)) {
+    if (contaFran.transferencia(50.0, contaAlex,1)) {
         println("Transferencia com sucesso")
     } else {
         println("Transferencia negada")

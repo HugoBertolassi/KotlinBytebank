@@ -4,7 +4,7 @@ class Analista(
     nome:String,
     cpf:String,
     salario:Double,
-    override val senha:Int=0
+    val senha:Int=0
 ) : Funcionario(
     nome = nome,
     cpf = cpf,

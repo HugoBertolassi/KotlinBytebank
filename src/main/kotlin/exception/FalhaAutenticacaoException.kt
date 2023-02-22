@@ -1,4 +1,6 @@
 package exception
 
-class FalhaAutenticacaoException {
+class FalhaAutenticacaoException(
+    mensagem:String="Falha na autenticacao"
+):Exception(mensagem) {
 }

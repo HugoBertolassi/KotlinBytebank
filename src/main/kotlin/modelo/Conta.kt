@@ -1,5 +1,6 @@
 package modelo
 
+import exception.FalhaAutenticacaoException
 import exception.SaldoInsuficienteException
 
 
@@ -8,7 +9,7 @@ import exception.SaldoInsuficienteException
 abstract class Conta(
     var titular:Cliente,
     var numero:  Int
-){
+):Autenticavel{
     var saldo = 0.0
         protected set//deixa somente ser modificado o valor internamente
         //private set(valor){field=valor}//field eh o proprio campo assim eh possivel fazer uma validacao no set se desejar
@@ -50,14 +51,25 @@ abstract class Conta(
 //        }
 //    }
 
-    fun transferencia(valor:Double,destino: Conta):Boolean{
-        if(this.saldo>=valor){
-            this.saldo-=valor
-            destino.deposito(valor)
-            return true
+    //delega para classe filha a necessidade de autenticar
+
+    override fun autentica(senha: Int): Boolean {
+        return titular.autentica(senha)
+    }
+    fun transferencia(valor:Double,destino: Conta, senha: Int):Boolean{
+
+        if(this.saldo<valor){
+            throw SaldoInsuficienteException(
+                mensagem = "Saldo insuficiente, o valor a ser transferido R$ $valor é superior ao saldo ${this.saldo} "
+            )
         }
-        throw SaldoInsuficienteException()
-        return false
+        if(!autentica(senha)){
+            throw FalhaAutenticacaoException()
+        }
+
+        this.saldo-=valor
+        destino.deposito(valor)
+        return true
     }
 
     //fun getSaldo():Double{ return this.saldo }

@@ -4,15 +4,15 @@ class Cliente(
     val nome:String,
     var endereco:Endereco=Endereco(),
     val cpf:String,
-    override val senha:Int
+    val senha:Int
 ): Autenticavel
 
     //Pelo metodo estar implementado na interface, nao tem necessidade de ffaze-lo aqui
-//{
-//    override fun autentica(senha:Int): Boolean {
-//        if (this.senha == senha) {
-//            return true
-//        }
-//        return false
-//    }
-//}
+{
+    override fun autentica(senha:Int): Boolean {
+        if (this.senha == senha) {
+            return true
+        }
+        return false
+    }
+}

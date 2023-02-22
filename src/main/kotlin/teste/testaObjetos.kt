@@ -8,7 +8,7 @@ public fun testaObjetos() {
     val fran = object : Autenticavel {
         val nome: String = "fran"
         val cpf: String = "123"
-        override val senha: Int = 12
+        val senha: Int = 12
 
         override fun autentica(senha: Int) = this.senha == senha
     }

@@ -5,12 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ca1063d-3805-4a26-aea1-5d2b7660d57b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/exception/SaldoInsuficienteException.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/teste/testaAny.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/teste/testaPilhaEException.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/exception/FalhaAutenticacaoException.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/exception/SaldoInsuficienteException.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/exception/SaldoInsuficienteException.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/modelo/Analista.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/modelo/Analista.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/modelo/Autenticavel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/modelo/Autenticavel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/modelo/Cliente.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/modelo/Cliente.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/modelo/Conta.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/modelo/Conta.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/modelo/ContaCorrente.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/modelo/ContaCorrente.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/teste/testaComportamento.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/teste/testaComportamento.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/teste/testaContasDiferentes.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/teste/testaContasDiferentes.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,8 +27,8 @@
         <option value="Kotlin Worksheet" />
         <option value="Class" />
         <option value="Kotlin Interface" />
-        <option value="Kotlin Class" />
         <option value="Kotlin File" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
