@@ -58,6 +58,10 @@ fun testaContasDiferentes() {
         println("Falha na autentitcacao")
         e.printStackTrace()
     }
+    catch(e:Exception){
+        println("Erro desconhecido")
+        e.printStackTrace()
+    }
     println("Saldo da conta apos transferir do ${contaCorrente.titular.nome} eh ${contaCorrente.saldo}")
     println("Saldo da conta apos  receber transferencia do ${contaPoupanca.titular.nome} eh ${contaPoupanca.saldo}")
 
