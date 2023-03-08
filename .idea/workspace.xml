@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ca1063d-3805-4a26-aea1-5d2b7660d57b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/list/FuncoesListaLivros.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/list/Livro.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/list/listaLivrosComAtributoNulo.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/list/testaListaComLivrosNulos.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/teste/testaArray.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/collection/collectionModule.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
     </list>
@@ -72,7 +68,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.ListaLivrosComAtributoNuloKt">
+  <component name="RunManager" selected="Kotlin.MainKt">
     <configuration name="ListaLivrosComAtributoNuloKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="list.ListaLivrosComAtributoNuloKt" />
       <module name="bytebank" />
@@ -89,8 +85,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Kotlin.ListaLivrosComAtributoNuloKt" />
         <item itemvalue="Kotlin.MainKt" />
+        <item itemvalue="Kotlin.ListaLivrosComAtributoNuloKt" />
       </list>
     </recent_temporary>
   </component>

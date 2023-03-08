@@ -1,4 +1,4 @@
-import list.testaListaLivrosComNulos
+import collection.collectionModule
 
 //Comandos
 // ctrl+alt+l identa o codigo
@@ -38,7 +38,8 @@ fun main() {
 
     //testaListaDelivros()
 
-    testaListaLivrosComNulos()
+    //testaListaLivrosComNulos()
+    collectionModule()
 }
 
 
