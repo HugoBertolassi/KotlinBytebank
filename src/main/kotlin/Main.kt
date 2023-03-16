@@ -1,4 +1,4 @@
-import collection.collectionModule
+import FuncionalParadigma.FuncionalParadigma
 
 //Comandos
 // ctrl+alt+l identa o codigo
@@ -39,7 +39,8 @@ fun main() {
     //testaListaDelivros()
 
     //testaListaLivrosComNulos()
-    collectionModule()
+    //collectionModule()
+    FuncionalParadigma()
 }
 
 
