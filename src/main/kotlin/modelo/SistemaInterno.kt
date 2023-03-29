@@ -24,4 +24,14 @@ class SistemaInterno {
        }
     }
 
+    fun entraHighOrder(admin: Autenticavel,senha: Int,autenticado:()->Unit={}){ //uds expressao lambda que nao faz nada no retorno de autenticado
+        if( admin.autentica(senha)){
+            println("Bem vindo ao bytebank")
+            autenticado()//essa linha garante o retorno e processamento do retorno
+        }
+        else{
+            println("Falha na autenticacao")
+        }
+    }
+
 }
